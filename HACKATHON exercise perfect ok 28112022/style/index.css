@@ -1,0 +1,106 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px auto 20px;
+
+
+    grid-template-areas: 
+        "h h h h z z z h h h h h"
+        "m m m m y y y m m m n n"
+        "m m c c c c c c c c n n"
+        ". . . . f f f f . . . ."         
+}
+
+
+header {
+grid-area: h;
+text-align: center;
+font-weight: 400;
+font:bold;
+}
+
+
+h1 { 
+text-shadow: 3em;
+text-align: center;
+font-family: 'Rubik Distressed', cursive;
+-webkit-text-stroke-width: 3px;
+-webkit-text-stroke-color: rgb(15, 93, 107);
+}
+
+
+h2 {  
+text-shadow: 3em;
+text-align: center;
+}
+
+
+
+.menu {
+grid-area: m;
+text-align:center;
+}
+
+
+img { 
+border-style: 3px;
+border-style: solid;
+border-color: aliceblue;
+box-shadow: 3px 3px 3px gray;
+}
+
+
+.z { 
+grid-area: z;    
+text-align: center;
+background-color: aqua;
+}
+
+
+main {
+grid-area: y;
+display: flex;
+justify-content:space-evenly;
+margin-top: 0 auto;
+}
+
+.blackborder {
+border-width: 5px;
+border-style: double;
+border-color: blueviolet;
+margin-bottom: 5px;
+}
+
+
+.content {
+grid-area: c;
+margin: 180px;
+}
+
+
+.whiteborder {
+padding: 70px 150px 0px 70px;
+font-weight: bold;
+}
+
+
+footer {
+grid-area: f;
+text-align: center;
+margin: 150px auto;
+width: fit-content;
+padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+

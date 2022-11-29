@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font: normal 16 px;
+  color: none; 
+}
+
+html, body, head {
+  background-color: #2635be;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+
+ /*Mobile first*/
+ @media(min-width: 400px) {  
+     
+  html, body { 
+ 
+   background-color: blueviolet;
+ 
+   }
+ }
+
+ 
+ 
+ /*desktop first*/
+ @media(min-width: 1024px) {  
+      
+  html, body { 
+  background-color: rgb(43, 226, 211);
+  
+   }
+ }
+ 
